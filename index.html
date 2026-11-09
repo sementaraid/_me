@@ -1,31 +1,42 @@
-<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Herlina Sunaryanto</title>
-<meta name="claude:viewport-fit-sides" content="cover">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Inter+Tight:wght@400;500;600&family=JetBrains+Mono:wght@400&display=swap">
 <style>
-/* Layout: workspace "page" in one 640px column; one radius, one chip, one card, one border weight throughout */
 :root{
   --bg:#ffffff; --ink:#37352f; --muted:#787774; --line:#e9e9e7; --soft:#f7f6f3; --hover:#efefed; --green:#448361;
-  --code-bg:rgba(135,131,120,.15); --code-ink:#eb5757;
+  --code-bg:rgba(135,131,120,.15); --code-ink:#37352f;
+  --h2-ink:#787774; --h2-font:"Inter Tight", ui-sans-serif, system-ui, sans-serif; --h2-prefix:""; --h2-case:uppercase; --h2-track:.06em;
+  --btn-bg:#37352f; --btn-ink:#ffffff;
+  --quote-ink:#37352f; --cap-prefix:"— "; --cap-ink:#787774; --cap-font:"Inter Tight", ui-sans-serif, system-ui, sans-serif;
   --r:8px; --r-sm:6px;
   --f-display:"Instrument Serif", "Times New Roman", serif;
   --f-body:"Inter Tight", ui-sans-serif, -apple-system, "Segoe UI", sans-serif;
   --f-mono:"JetBrains Mono", ui-monospace, Menlo, monospace;
 }
 @media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
-  --bg:#191919; --ink:#d4d4d4; --muted:#9b9b9b; --line:#2f2f2f; --soft:#202020; --hover:#2a2a2a; --green:#5a9e7a;
-  --code-bg:rgba(135,131,120,.2); --code-ink:#ff7369; color-scheme:dark}}
+  --bg:#1e1e1e; --ink:#d4d4d4; --muted:#858585; --line:#333333; --soft:#252526; --hover:#2a2d2e; --green:#89d185;
+  --code-bg:#2d2d2d; --code-ink:#d4d4d4;
+  --h2-ink:#858585; --h2-font:"Inter Tight", ui-sans-serif, system-ui, sans-serif; --h2-prefix:""; --h2-case:uppercase; --h2-track:.06em;
+  --btn-bg:#d4d4d4; --btn-ink:#1e1e1e;
+  --quote-ink:#ce9178; --cap-prefix:"— "; --cap-ink:#858585; --cap-font:"Inter Tight", ui-sans-serif, system-ui, sans-serif; color-scheme:dark}}
 :root[data-theme="dark"]{
-  --bg:#191919; --ink:#d4d4d4; --muted:#9b9b9b; --line:#2f2f2f; --soft:#202020; --hover:#2a2a2a; --green:#5a9e7a;
-  --code-bg:rgba(135,131,120,.2); --code-ink:#ff7369; color-scheme:dark}
+  --bg:#1e1e1e; --ink:#d4d4d4; --muted:#858585; --line:#333333; --soft:#252526; --hover:#2a2d2e; --green:#89d185;
+  --code-bg:#2d2d2d; --code-ink:#d4d4d4;
+  --h2-ink:#858585; --h2-font:"Inter Tight", ui-sans-serif, system-ui, sans-serif; --h2-prefix:""; --h2-case:uppercase; --h2-track:.06em;
+  --btn-bg:#d4d4d4; --btn-ink:#1e1e1e;
+  --quote-ink:#ce9178; --cap-prefix:"— "; --cap-ink:#858585; --cap-font:"Inter Tight", ui-sans-serif, system-ui, sans-serif; color-scheme:dark}
 
 *{box-sizing:border-box}
 body{background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:15px;line-height:1.6;overflow-x:hidden}
 a{color:inherit;text-decoration:none}
 :focus-visible{outline:2px solid var(--ink);outline-offset:2px;border-radius:4px}
-code{font-family:var(--f-mono);font-size:.85em;background:var(--code-bg);color:var(--ink);padding:.15em .4em;border-radius:4px}
+code{font-family:var(--f-mono);font-size:.85em;background:var(--code-bg);color:var(--code-ink);padding:.15em .4em;border-radius:4px}
 svg.logo{width:14px;height:14px;fill:currentColor;flex:none}
 
 /* Top bar */
@@ -55,13 +66,15 @@ body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset
 
 .wrap{max-width:640px;margin:0 auto;padding-left:max(16px, env(safe-area-inset-left, 0px));padding-right:max(16px, env(safe-area-inset-right, 0px));padding-block:0 80px}
 
-.avatar{margin-top:-42px;width:84px;height:84px;border-radius:var(--r);background:linear-gradient(145deg,#3a3833,#6b6862);color:#fff;display:grid;place-items:center;font-family:var(--f-display);font-size:38px;box-shadow:0 0 0 4px var(--bg)}
+.avatar{margin-top:56px;width:84px;height:84px;border-radius:var(--r);background:linear-gradient(145deg,#3a3833,#6b6862);color:#fff;display:grid;place-items:center;font-family:var(--f-display);font-size:38px;box-shadow:0 0 0 4px var(--bg)}
 .hero-quote{margin:0}
-.hero-quote figcaption{margin-top:12px;font-size:14px;color:var(--muted)}
+.hero-quote h1{color:var(--quote-ink)}
+.hero-quote figcaption{margin-top:12px;font-size:14px;color:var(--cap-ink);font-family:var(--cap-font)}
+.hero-quote figcaption::before{content:"— "}
 h1{font-family:var(--f-display);font-weight:400;font-size:clamp(40px,7.5vw,54px);line-height:1.1;letter-spacing:-.02em;margin:24px 0 0;text-wrap:balance;max-width:12ch}
 
-/* Section headings — one style */
-h2{font-size:13px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin:56px 0 16px;padding-bottom:8px;border-bottom:1px solid var(--line)}
+/* Section headings */
+h2{font-family:var(--h2-font);font-size:13px;font-weight:600;letter-spacing:var(--h2-track);text-transform:var(--h2-case);color:var(--h2-ink);margin:56px 0 16px;padding-bottom:8px;border-bottom:1px solid var(--line)}
 
 /* Properties */
 .props{margin-top:28px;display:flex;flex-direction:column}
@@ -74,7 +87,7 @@ h2{font-size:13px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;
 .pv a:hover{border-color:var(--ink)}
 .dot{width:7px;height:7px;border-radius:50%;background:var(--green);flex:none}
 
-/* The one chip */
+/* Chip */
 .chip{display:inline-flex;align-items:center;gap:6px;font-size:12.5px;line-height:1;padding:5px 8px;border-radius:var(--r-sm);background:var(--soft);border:1px solid var(--line);color:var(--ink);white-space:nowrap}
 .chips{display:flex;flex-wrap:wrap;gap:6px}
 
@@ -84,7 +97,7 @@ h2{font-size:13px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;
 .callout p{margin:0;font-size:15px;line-height:1.65}
 
 .actions{display:flex;flex-wrap:wrap;align-items:center;gap:12px;margin-top:16px}
-.btn{font:inherit;font-size:14px;font-weight:500;display:inline-flex;align-items:center;gap:8px;border-radius:var(--r-sm);padding:8px 14px;cursor:pointer;border:1px solid var(--ink);background:var(--ink);color:var(--bg);transition:opacity .15s}
+.btn{font:inherit;font-size:14px;font-weight:500;display:inline-flex;align-items:center;gap:8px;border-radius:var(--r-sm);padding:8px 14px;cursor:pointer;border:1px solid var(--btn-bg);background:var(--btn-bg);color:var(--btn-ink);transition:opacity .15s}
 .btn:hover{opacity:.85}
 .btn svg{width:16px;height:16px;stroke:currentColor;fill:none;stroke-width:1.7}
 .email{font-size:14px;color:var(--muted)}
@@ -108,7 +121,7 @@ h2{font-size:13px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;
 .yr{color:var(--muted);font-size:13px;font-variant-numeric:tabular-nums}
 .card p{margin:0;color:var(--muted);font-size:13.5px;line-height:1.5;flex:1}
 
-/* Mock screens — neutral only */
+/* Mock screens */
 .scr{background:var(--bg);border:1px solid var(--line);border-radius:var(--r-sm);flex:1;padding:8px;display:flex;flex-direction:column;gap:5px;min-width:0}
 .bar{height:5px;border-radius:3px;background:var(--line)}
 .bar.d{background:var(--c);opacity:.6}
@@ -158,7 +171,7 @@ details ul{margin:0 0 14px 26px;padding-left:18px;font-size:14px;color:var(--mut
 footer{margin-top:72px;padding-top:16px;border-top:1px solid var(--line);display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;color:var(--muted);font-size:13px}
 
 @media (max-width:560px){
-  .cover{height:110px}
+  .avatar{margin-top:40px}
   .clock{font-size:12.5px}
   .prop{grid-template-columns:96px minmax(0,1fr)}
   .grid,.todo{grid-template-columns:minmax(0,1fr)}
@@ -168,6 +181,8 @@ footer{margin-top:72px;padding-top:16px;border-top:1px solid var(--line);display
 }
 @media (prefers-reduced-motion: reduce){*{transition:none!important}}
 </style>
+</head>
+<body>
 
 <header class="topbar">
   <div class="top">
@@ -184,13 +199,11 @@ footer{margin-top:72px;padding-top:16px;border-top:1px solid var(--line);display
   </div>
 </header>
 
-<div class="cover" aria-hidden="true"></div>
-
 <div class="wrap">
   <div class="avatar" aria-label="Herlina Sunaryanto">H</div>
   <figure class="hero-quote">
     <h1>“The best way out is always through.”</h1>
-    <figcaption>— Robert Frost</figcaption>
+    <figcaption>Robert Frost</figcaption>
   </figure>
 
   <div class="props">
@@ -387,5 +400,5 @@ footer{margin-top:72px;padding-top:16px;border-top:1px solid var(--line);display
   });
 })();
 </script>
-
-</body></html>
+</body>
+</html>
