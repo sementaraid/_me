@@ -137,6 +137,9 @@ h2{font-family:var(--h2-font);font-size:13px;font-weight:600;letter-spacing:var(
 .modal-x:hover{background:var(--hover);color:var(--ink)}
 .modal-x svg{width:16px;height:16px}
 .modal-frame{display:block;width:100%;height:min(620px,calc(100dvh - 100px));border:0;background:#eef0f3}
+.modal-shot{display:block;max-height:calc(100dvh - 100px);overflow:auto;background:var(--soft)}
+.modal-shot img{display:block;width:100%;height:auto}
+.modal [hidden]{display:none!important}
 
 /* Mock screens */
 .scr{background:var(--bg);border:1px solid var(--line);border-radius:var(--r-sm);flex:1;padding:8px;display:flex;flex-direction:column;gap:5px;min-width:0}
@@ -299,7 +302,7 @@ footer{margin-top:72px;padding-top:16px;border-top:1px solid var(--line);display
       </div>
     </article>
 
-    <article class="card" style="--c:#8b5cf6">
+    <article class="card has-demo" style="--c:#8b5cf6" data-shot="cGJldy5sYXRyb3Atc3BvY2VzdmVkLWxhY2l0Y2FycC9rcm93Lw==" data-link="Z25pbmlhcnQuc3BvY2VzdmVkLWxhY2l0Y2FycC5sYXRyb3AvLzpzcHR0aA==" data-demo-title="Next.js Migration · Practical DevSecOps portal">
       <div class="shot">
         <div class="term"><s>$</s> next build
 ✓ Compiled successfully
@@ -315,7 +318,7 @@ footer{margin-top:72px;padding-top:16px;border-top:1px solid var(--line);display
       <div class="card-body">
         <div class="card-title"><h3>Next.js Migration</h3><span class="yr">2024</span></div>
         <p>Moved from React to Next.js with SSR, standalone builds and a CDN.</p>
-        <div class="chips"><span class="chip"><svg class="logo" viewBox="0 0 24 24" aria-hidden="true"><path d="M18.665 21.978C16.758 23.255 14.465 24 12 24 5.377 24 0 18.623 0 12S5.377 0 12 0s12 5.377 12 12c0 3.583-1.574 6.801-4.067 9.001L9.219 7.2H7.2v9.596h1.615V9.251l9.85 12.727Zm-3.332-8.533 1.6 2.061V7.2h-1.6v6.245Z"/></svg>Next.js</span><span class="chip"><svg class="logo" viewBox="0 0 24 24" aria-hidden="true"><path d="M22.251 11.82a3.117 3.117 0 0 0-2.328-3.01L22.911 0H8.104L11.1 8.838a3.116 3.116 0 0 0-2.244 2.988c0 1.043.52 1.967 1.313 2.536a8.279 8.279 0 0 1-1.084 1.244 8.14 8.14 0 0 1-2.55 1.647c-.834-.563-1.195-1.556-.869-2.446a3.11 3.11 0 0 0-.91-6.08 3.117 3.117 0 0 0-3.113 3.113c0 .848.347 1.626.903 2.182-.048.097-.097.195-.146.299-.465.959-.993 2.043-1.195 3.259-.403 2.432.257 4.384 1.849 5.489A5.093 5.093 0 0 0 5.999 24c1.827 0 3.682-.917 5.475-1.807 1.279-.632 2.599-1.292 3.898-1.612.48-.118.98-.187 1.508-.264 1.07-.153 2.175-.312 3.168-.89a4.482 4.482 0 0 0 2.182-3.091c.174-.994 0-1.994-.444-2.87.298-.48.465-1.042.465-1.647zm-1.355 0c0 .965-.785 1.75-1.75 1.75a1.753 1.753 0 0 1-1.085-3.126l.007-.007c.056-.042.118-.084.18-.125 0 0 .008 0 .008-.007.028-.014.055-.035.083-.05.007 0 .014-.006.021-.006.028-.014.063-.028.097-.042.035-.014.07-.027.098-.041.007 0 .013-.007.02-.007.028-.007.056-.021.084-.028.007 0 .02-.007.028-.007.034-.007.062-.014.097-.02h.007l.104-.022c.007 0 .02 0 .028-.007.028 0 .055-.007.083-.007h.035c.035 0 .07-.007.111-.007h.09c.028 0 .05 0 .077.007h.014c.055.007.111.014.167.028a1.766 1.766 0 0 1 1.396 1.723zM10.043 1.39h10.93l-2.509 7.4c-.104.02-.208.055-.312.09l-2.64-5.385-2.648 5.35c-.104-.034-.216-.055-.327-.076l-2.494-7.38zm4.968 9.825a3.083 3.083 0 0 0-.938-1.668l1.438-2.904 1.452 2.967c-.43.43-.743.98-.868 1.605H15.01zm-3.481-1.098c.034-.007.062-.014.097-.02h.02c.029-.008.056-.008.084-.015h.028c.028 0 .049-.007.076-.007h.271c.028 0 .049.007.07.007.014 0 .02 0 .035.007.027.007.048.007.076.014.007 0 .014 0 .028.007l.097.02h.007c.028.008.056.015.083.029.007 0 .014.007.028.007.021.007.049.014.07.027.007 0 .014.007.02.007.028.014.056.021.084.035h.007a.374.374 0 0 1 .09.049h.007c.028.014.056.034.084.048.007 0 .007.007.013.007.028.014.05.035.077.049l.007.007c.083.062.16.132.236.201l.007.007a1.747 1.747 0 0 1 .48 1.209 1.752 1.752 0 0 1-3.502 0 1.742 1.742 0 0 1 1.32-1.695zm-6.838-.049c.966 0 1.751.786 1.751 1.751s-.785 1.751-1.75 1.751-1.752-.785-1.752-1.75.786-1.752 1.751-1.752zm16.163 6.025a3.07 3.07 0 0 1-1.508 2.133c-.758.438-1.689.577-2.669.716a17.29 17.29 0 0 0-1.64.291c-1.445.355-2.834 1.05-4.182 1.717-1.724.854-3.35 1.66-4.857 1.66a3.645 3.645 0 0 1-2.154-.688c-1.529-1.056-1.453-3.036-1.272-4.12.167-1.015.632-1.966 1.077-2.877.028-.055.049-.104.077-.16.152.056.312.098.479.126-.264 1.473.486 2.994 1.946 3.745l.264.139.284-.104c1.216-.431 2.342-1.133 3.336-2.071a9.334 9.334 0 0 0 1.445-1.716c.16.027.32.034.48.034a3.117 3.117 0 0 0 3.008-2.327h1.167a3.109 3.109 0 0 0 3.01 2.327c.576 0 1.11-.16 1.57-.43.18.52.236 1.063.139 1.605z"/></svg>Jest</span></div>
+        <div class="chips"><span class="chip"><svg class="logo" viewBox="0 0 24 24" aria-hidden="true"><path d="M18.665 21.978C16.758 23.255 14.465 24 12 24 5.377 24 0 18.623 0 12S5.377 0 12 0s12 5.377 12 12c0 3.583-1.574 6.801-4.067 9.001L9.219 7.2H7.2v9.596h1.615V9.251l9.85 12.727Zm-3.332-8.533 1.6 2.061V7.2h-1.6v6.245Z"/></svg>Next.js</span><span class="chip"><svg class="logo" viewBox="0 0 24 24" aria-hidden="true"><path d="M22.251 11.82a3.117 3.117 0 0 0-2.328-3.01L22.911 0H8.104L11.1 8.838a3.116 3.116 0 0 0-2.244 2.988c0 1.043.52 1.967 1.313 2.536a8.279 8.279 0 0 1-1.084 1.244 8.14 8.14 0 0 1-2.55 1.647c-.834-.563-1.195-1.556-.869-2.446a3.11 3.11 0 0 0-.91-6.08 3.117 3.117 0 0 0-3.113 3.113c0 .848.347 1.626.903 2.182-.048.097-.097.195-.146.299-.465.959-.993 2.043-1.195 3.259-.403 2.432.257 4.384 1.849 5.489A5.093 5.093 0 0 0 5.999 24c1.827 0 3.682-.917 5.475-1.807 1.279-.632 2.599-1.292 3.898-1.612.48-.118.98-.187 1.508-.264 1.07-.153 2.175-.312 3.168-.89a4.482 4.482 0 0 0 2.182-3.091c.174-.994 0-1.994-.444-2.87.298-.48.465-1.042.465-1.647zm-1.355 0c0 .965-.785 1.75-1.75 1.75a1.753 1.753 0 0 1-1.085-3.126l.007-.007c.056-.042.118-.084.18-.125 0 0 .008 0 .008-.007.028-.014.055-.035.083-.05.007 0 .014-.006.021-.006.028-.014.063-.028.097-.042.035-.014.07-.027.098-.041.007 0 .013-.007.02-.007.028-.007.056-.021.084-.028.007 0 .02-.007.028-.007.034-.007.062-.014.097-.02h.007l.104-.022c.007 0 .02 0 .028-.007.028 0 .055-.007.083-.007h.035c.035 0 .07-.007.111-.007h.09c.028 0 .05 0 .077.007h.014c.055.007.111.014.167.028a1.766 1.766 0 0 1 1.396 1.723zM10.043 1.39h10.93l-2.509 7.4c-.104.02-.208.055-.312.09l-2.64-5.385-2.648 5.35c-.104-.034-.216-.055-.327-.076l-2.494-7.38zm4.968 9.825a3.083 3.083 0 0 0-.938-1.668l1.438-2.904 1.452 2.967c-.43.43-.743.98-.868 1.605H15.01zm-3.481-1.098c.034-.007.062-.014.097-.02h.02c.029-.008.056-.008.084-.015h.028c.028 0 .049-.007.076-.007h.271c.028 0 .049.007.07.007.014 0 .02 0 .035.007.027.007.048.007.076.014.007 0 .014 0 .028.007l.097.02h.007c.028.008.056.015.083.029.007 0 .014.007.028.007.021.007.049.014.07.027.007 0 .014.007.02.007.028.014.056.021.084.035h.007a.374.374 0 0 1 .09.049h.007c.028.014.056.034.084.048.007 0 .007.007.013.007.028.014.05.035.077.049l.007.007c.083.062.16.132.236.201l.007.007a1.747 1.747 0 0 1 .48 1.209 1.752 1.752 0 0 1-3.502 0 1.742 1.742 0 0 1 1.32-1.695zm-6.838-.049c.966 0 1.751.786 1.751 1.751s-.785 1.751-1.75 1.751-1.752-.785-1.752-1.75.786-1.752 1.751-1.752zm16.163 6.025a3.07 3.07 0 0 1-1.508 2.133c-.758.438-1.689.577-2.669.716a17.29 17.29 0 0 0-1.64.291c-1.445.355-2.834 1.05-4.182 1.717-1.724.854-3.35 1.66-4.857 1.66a3.645 3.645 0 0 1-2.154-.688c-1.529-1.056-1.453-3.036-1.272-4.12.167-1.015.632-1.966 1.077-2.877.028-.055.049-.104.077-.16.152.056.312.098.479.126-.264 1.473.486 2.994 1.946 3.745l.264.139.284-.104c1.216-.431 2.342-1.133 3.336-2.071a9.334 9.334 0 0 0 1.445-1.716c.16.027.32.034.48.034a3.117 3.117 0 0 0 3.008-2.327h1.167a3.109 3.109 0 0 0 3.01 2.327c.576 0 1.11-.16 1.57-.43.18.52.236 1.063.139 1.605z"/></svg>Jest</span><button type="button" class="demo" aria-haspopup="dialog"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="2" y="3" width="12" height="10" rx="1.5"/><path d="M2 6h12"/></svg>View project</button></div>
       </div>
     </article>
 
@@ -389,10 +392,11 @@ footer{margin-top:72px;padding-top:16px;border-top:1px solid var(--line);display
 <dialog class="modal" id="demo-modal" aria-labelledby="demo-title">
   <div class="modal-head">
     <h3 id="demo-title">Live demo</h3>
-    <a id="demo-open" href="https://gauge.sunar.dev" target="_blank" rel="noopener">Open in new tab</a>
+    <a id="demo-open" href="#" target="_blank" rel="noopener noreferrer nofollow" referrerpolicy="no-referrer">Open in new tab</a>
     <button type="button" class="modal-x" id="demo-close" aria-label="Close" autofocus><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true"><path d="M4 4l8 8M12 4l-8 8"/></svg></button>
   </div>
   <iframe class="modal-frame" id="demo-frame" title="Live demo" loading="lazy"></iframe>
+  <div class="modal-shot" id="demo-shot" hidden><img id="demo-shot-img" alt=""></div>
 </dialog>
 
 <script>
@@ -427,17 +431,30 @@ footer{margin-top:72px;padding-top:16px;border-top:1px solid var(--line);display
 
   var modal=document.getElementById('demo-modal'), frame=document.getElementById('demo-frame');
   var mtitle=document.getElementById('demo-title'), mopen=document.getElementById('demo-open');
+  var shot=document.getElementById('demo-shot'), shotImg=document.getElementById('demo-shot-img');
+  // Screenshot paths and project links are stored reversed + base64 so crawlers
+  // reading the HTML don't find a URL; they are decoded only after a click.
+  function decode(v){try{return atob(v).split('').reverse().join('')}catch(_){return ''}}
   function openDemo(card){
-    var url=card.getAttribute('data-demo'), title=card.getAttribute('data-demo-title')||'Live demo';
-    mtitle.textContent=title; frame.title=title; mopen.href=url; frame.src=url;
-    if(modal.showModal){modal.showModal()}else{window.open(url,'_blank','noopener')}
+    var title=card.getAttribute('data-demo-title')||'Live demo';
+    var shotSrc=card.getAttribute('data-shot'), url=card.getAttribute('data-demo');
+    var link=card.getAttribute('data-link') ? decode(card.getAttribute('data-link')) : url;
+    mtitle.textContent=title; mopen.href=link; mopen.textContent=shotSrc?'Visit site':'Open in new tab';
+    if(shotSrc){
+      frame.hidden=true; frame.src='about:blank';
+      shot.hidden=false; shotImg.alt=title+' screenshot'; shotImg.src=decode(shotSrc);
+    }else{
+      shot.hidden=true; shotImg.removeAttribute('src');
+      frame.hidden=false; frame.title=title; frame.src=url;
+    }
+    if(modal.showModal){modal.showModal()}else{window.open(link,'_blank','noopener,noreferrer')}
   }
-  document.querySelectorAll('.card[data-demo]').forEach(function(card){
+  document.querySelectorAll('.card.has-demo').forEach(function(card){
     card.addEventListener('click',function(){openDemo(card)});
   });
   document.getElementById('demo-close').addEventListener('click',function(){modal.close()});
   modal.addEventListener('click',function(e){if(e.target===modal)modal.close()});
-  modal.addEventListener('close',function(){frame.src='about:blank'});
+  modal.addEventListener('close',function(){frame.src='about:blank';shotImg.removeAttribute('src')});
 })();
 </script>
 </body>
